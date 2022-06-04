@@ -1,0 +1,5 @@
+{
+  "extends": "@tencent/next-config/ts/react.json",
+  "include": ["database", "reactive", "index.ts"],
+  "exclude": ["dist", "build", "es", "lib", "node_modules"]
+}

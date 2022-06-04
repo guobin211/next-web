@@ -1,0 +1,10 @@
+{
+  "name": "@tencent/next-webpack",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "@tencent/next-config": "workspace:*"
+  },
+  "dependencies": {
+  }
+}

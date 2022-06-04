@@ -1,0 +1,29 @@
+{
+  "name": "@tencent/next-components",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "scripts": {
+    "dev": ""
+  },
+  "files": [
+    "dist",
+    "es",
+    "libs",
+    "README.md"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@tencent/next-config": "workspace:*",
+    "@tencent/next-runtime": "workspace:*",
+    "@types/react": "17",
+    "react": "^17",
+    "react-dom": "^17"
+  },
+  "peerDependencies": {
+    "@tencent/next-runtime": "workspace:*",
+    "react": "^17",
+    "react-dom": "^17"
+  }
+}

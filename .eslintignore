@@ -1,0 +1,17 @@
+*.d.ts
+*.min.js
+*.config.js
+.eslintrc.js
+
+build
+dist
+es
+lib
+static
+public
+node_modules
+
+.next
+.vscode
+.idea
+.cache
