@@ -2,10 +2,16 @@
   "extends": "@tencent/next-config/ts/next.json",
   "include": [
     "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
+    "./*.ts",
+    "./*.tsx",
+    "./**/*.ts",
+    "./**/*.tsx"
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "compilerOptions": {
+    "jsx": "preserve",
+    "target": "ES2015"
+  }
 }

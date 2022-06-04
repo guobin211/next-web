@@ -9,20 +9,19 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
-    "lint": "eslint --fix --ext .ts,.tsx ./",
+    "clean": "turbo run clean --parallel",
+    "lint": "eslint --fix --ext .ts,.tsx .",
     "format": "prettier --write \"**/*.{ts,tsx,md,mdx}\""
   },
   "devDependencies": {
+    "@types/node": "^16",
     "@babel/core": "^7",
     "@tencent/eslint-config-tencent": "^1",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "@types/node": "^16",
     "eslint": "^8",
-    "eslint-config-prettier": "^8",
-    "eslint-plugin-react": "^7",
-    "typescript": "^4",
     "prettier": "^2.6",
+    "typescript": "^4",
     "turbo": "latest"
   },
   "engines": {

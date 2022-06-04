@@ -15,7 +15,7 @@
     "module": "esnext",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react"
+    "jsx": "preserve"
   },
   "include": ["next-env.d.ts"],
   "exclude": ["node_modules"]

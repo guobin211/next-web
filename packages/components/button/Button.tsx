@@ -1,14 +1,13 @@
-import React, { CSSProperties } from 'react';
-
-export interface ButtonProps {
-  key?: string | number;
-  className?: string;
-  style?: CSSProperties;
-}
+import React from 'react';
+import { ButtonProps } from './Button.props';
 
 const Button: React.FC<ButtonProps> = (props) => {
-  console.log('Button', props);
-  return <div></div>;
+  const { className, style, ...rest } = props;
+  return (
+    <button {...rest} className={className} style={style}>
+      {props.children}
+    </button>
+  );
 };
 
 export default Button;
