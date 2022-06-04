@@ -1,14 +1,11 @@
 {
-  "extends": "@tencent/next-config/ts/next.json",
+  "extends": "@tencent/next-config/json/next.json",
   "include": [
     "next-env.d.ts",
     "./*.ts",
     "./*.tsx",
     "./**/*.ts",
     "./**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
   ],
   "compilerOptions": {
     "jsx": "preserve",

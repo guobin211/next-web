@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "composite": false,
     "declaration": true,
@@ -6,20 +7,17 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "inlineSources": false,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "moduleResolution": "node",
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "preserveWatchOutput": true,
     "skipLibCheck": true,
+    "experimentalDecorators": true,
     "strict": true,
-    "target": "ES6",
-    "module": "ESNext",
-    "lib": [
-      "esnext",
-      "dom"
-    ],
+    "target": "ES2015",
+    "module": "UMD",
     "outDir": "./dist",
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist", "lib", "es", "build", "__tests__"]
 }

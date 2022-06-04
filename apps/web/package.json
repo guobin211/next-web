@@ -16,9 +16,7 @@
   "devDependencies": {
     "@babel/core": "^7",
     "@tencent/next-config": "workspace:*",
-    "@tencent/next-runtime": "workspace:*",
     "@tencent/next-components": "workspace:*",
-    "@tencent/next-webpack": "workspace:*",
     "@types/node": "^17.0.12",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",

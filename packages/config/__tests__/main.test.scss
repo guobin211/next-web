@@ -1,0 +1,13 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-container {
+  display: grid;
+  grid-column: 2;
+  grid-row: 2;
+  grid-template-rows: 4;
+}

@@ -1,19 +1,60 @@
 {
   "name": "@tencent/next-config",
+  "description": "公共配置和第三方依赖",
   "version": "0.0.0",
   "private": true,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "bin": "dist/bin.js",
   "scripts": {
-    "build": "tsc",
-    "clean": "rm -rf .turbo && rm -rf node_modules"
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf .turbo && rm -rf node_modules",
+    "test": "jest"
   },
   "files": [
-    "ts",
+    "json",
     "dist"
   ],
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@types/node": "^16",
-    "typescript": "^4"
+    "@swc/core": "^1",
+    "@swc/jest": "^0.2",
+    "css-loader": "^6",
+    "css-minimizer-webpack-plugin": "^3",
+    "html-webpack-plugin": "^5",
+    "mini-css-extract-plugin": "^2",
+    "postcss": "^8",
+    "postcss-loader": "^6",
+    "postcss-preset-env": "^6",
+    "sass": "^1",
+    "sass-loader": "^12",
+    "style-loader": "^3",
+    "swc-loader": "^0.2",
+    "typescript": "^4",
+    "webpack": "^5",
+    "webpack-cli": "^4",
+    "webpack-dev-server": "^4",
+    "webpack-merge": "^5"
+  },
+  "peerDependencies": {
+    "@swc/core": "^1",
+    "@swc/jest": "^0.2",
+    "css-loader": "^6",
+    "css-minimizer-webpack-plugin": "^3",
+    "html-webpack-plugin": "^5",
+    "mini-css-extract-plugin": "^2",
+    "postcss": "^8",
+    "postcss-loader": "^6",
+    "postcss-preset-env": "^6",
+    "sass": "^1",
+    "sass-loader": "^12",
+    "style-loader": "^3",
+    "swc-loader": "^0.2",
+    "typescript": "^4",
+    "webpack": "^5",
+    "webpack-cli": "^4",
+    "webpack-dev-server": "^4",
+    "webpack-merge": "^5"
   }
 }
