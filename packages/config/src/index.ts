@@ -4,10 +4,4 @@ import webpack from './webpack.config';
 import postcss from './postcss.config';
 import swc from './swc.config';
 
-export {
-  jest,
-  rollup,
-  webpack,
-  postcss,
-  swc,
-};
+export { jest, rollup, webpack, postcss, swc };

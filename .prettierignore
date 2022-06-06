@@ -1,0 +1,12 @@
+dist
+build
+node_modules
+target
+
+.idea
+.vscode
+.next
+.cache
+
+*.d.ts
+*.min.js

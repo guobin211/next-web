@@ -41,5 +41,5 @@ interface UserConfig extends webpack.Configuration {
 
 export default {
   config,
-  build,
+  build
 };

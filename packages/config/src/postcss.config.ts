@@ -9,18 +9,16 @@ function config(userConfig: Record<string, any> = {}) {
     plugins: [
       'postcss-preset-env',
       {
-        autoprefixer: { grid: true, flex: true },
-      },
+        autoprefixer: { grid: true, flex: true }
+      }
     ],
-    ...plugins,
+    ...plugins
   };
 }
 
-function build() {
-
-}
+function build() {}
 
 export default {
   config,
-  build,
+  build
 };

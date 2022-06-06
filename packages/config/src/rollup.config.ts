@@ -1,12 +1,8 @@
-function config() {
+function config() {}
 
-}
-
-function build() {
-
-}
+function build() {}
 
 export default {
   config,
-  build,
+  build
 };

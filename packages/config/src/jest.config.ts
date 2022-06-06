@@ -1,7 +1,5 @@
-function config() {
-
-}
+function config() {}
 
 export default {
-  config,
+  config
 };
