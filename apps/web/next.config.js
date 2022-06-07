@@ -1,5 +1,5 @@
 const ntm = require('next-transpile-modules');
-const localPkg = ['@tencent/next-components']
+const localPkg = ['@tencent/next-components', '@tencent/next-ui']
 const withTM = ntm(localPkg);
 
 /**

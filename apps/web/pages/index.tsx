@@ -1,9 +1,9 @@
 import React, { useCallback, useState } from 'react';
-import { Button } from '@tencent/next-components';
-import { ButtonProps } from '@tencent/next-components/button/Button.props';
-import { LogProps, withLogProps } from '@tencent/next-components/__HOC__';
+import { Button } from '@tencent/next-ui/src';
+import { ButtonProps } from '@tencent/next-ui/src/button/Button.props';
+// import { LogProps, withLogProps } from '@tencent/next-components/__HOC__';
 
-@LogProps
+// @LogProps
 export class SubmitButton extends React.Component<ButtonProps> {
   render() {
     return (
@@ -14,7 +14,7 @@ export class SubmitButton extends React.Component<ButtonProps> {
   }
 }
 
-const LogButton = withLogProps(Button);
+// const LogButton = withLogProps(Button);
 
 const Web: React.FC = () => {
   const [type, setType] = useState<any>('submit');
@@ -26,9 +26,9 @@ const Web: React.FC = () => {
   return (
     <div>
       <h1>Web</h1>
-      <LogButton type={type} className={'meet-btn'} onClick={handleClick}>
+      <Button type={type} className={'meet-btn'} onClick={handleClick}>
         Button
-      </LogButton>
+      </Button>
       <SubmitButton type={type} onClick={handleClick}>
         SubmitButton
       </SubmitButton>

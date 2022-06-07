@@ -1,1 +1,1 @@
-# NextWeb Project
+# The Next Web Project

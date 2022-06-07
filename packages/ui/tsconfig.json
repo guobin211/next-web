@@ -1,0 +1,8 @@
+{
+  "extends": "@tencent/next-config/json/react.json",
+  "include": ["*.tsx", "./**/*.tsx",  "./**/**/*.tsx", "./**/**/**/*.tsx"],
+  "compilerOptions": {
+    "outDir": "dist",
+    "jsx": "react"
+  }
+}

@@ -1,4 +1,4 @@
-# NextComponents 业务组件库
+# next-components 业务组件库
 
 ## Project
 

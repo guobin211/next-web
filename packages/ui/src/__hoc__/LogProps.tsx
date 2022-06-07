@@ -58,7 +58,7 @@ export function withLogProps<T = any>(FC: React.FC<T>): React.FC<T> {
     return FC;
   }
   const Component = FC as React.FC;
-  const WithLogFC: React.FC = props => {
+  const WithLogFC: React.FC = (props) => {
     const prevRef = useRef<{}>({});
     useEffect(() => {
       logInfo(getDisplayName(FC), prevRef.current, props);

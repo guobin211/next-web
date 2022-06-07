@@ -1,8 +1,7 @@
 {
   "name": "@tencent/next-config",
-  "description": "公共配置和第三方依赖",
+  "description": "公共配置和第三方依赖，dependencies提供给各个项目使用",
   "version": "0.0.0",
-  "private": true,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": "dist/bin.js",
@@ -15,9 +14,7 @@
     "json",
     "dist"
   ],
-  "dependencies": {},
-  "devDependencies": {
-    "@types/node": "^16",
+  "dependencies": {
     "@swc/core": "^1",
     "@swc/jest": "^0.2",
     "css-loader": "^6",
@@ -36,6 +33,9 @@
     "webpack-cli": "^4",
     "webpack-dev-server": "^4",
     "webpack-merge": "^5"
+  },
+  "devDependencies": {
+    "@types/node": "^16"
   },
   "peerDependencies": {
     "@swc/core": "^1",

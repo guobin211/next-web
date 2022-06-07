@@ -1,0 +1,9 @@
+{
+  "extends": "@tencent/next-config/json/base.json",
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ESNext",
+    "outDir": "./dist",
+  },
+  "exclude": ["node_modules", "dist", "lib", "es", "build", "__tests__"]
+}

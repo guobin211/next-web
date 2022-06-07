@@ -4,5 +4,5 @@ function build() {}
 
 export default {
   config,
-  build
+  build,
 };
