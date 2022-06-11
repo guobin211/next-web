@@ -8,13 +8,14 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "inlineSources": false,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "moduleResolution": "node",
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "preserveWatchOutput": true,
     "skipLibCheck": true,
     "strict": true,
+    "resolveJsonModule": true,
     "experimentalDecorators": true
   },
   "exclude": ["node_modules", "dist", "lib", "es", "build"]

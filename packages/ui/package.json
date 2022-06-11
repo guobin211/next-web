@@ -15,7 +15,8 @@
   ],
   "dependencies": {
     "react": "^17",
-    "react-dom": "^17"
+    "react-dom": "^17",
+    "classnames": "^2.3"
   },
   "devDependencies": {
     "@tencent/next-config": "workspace:*",

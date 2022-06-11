@@ -1,5 +1,5 @@
 import merge from 'webpack-merge';
-import webpack from 'webpack';
+import webpack, { container } from 'webpack';
 
 /**
  * 生成webpack配置
@@ -8,7 +8,16 @@ import webpack from 'webpack';
 function config(userConfig: UserConfig): webpack.Configuration {
   console.log('next-config webpack config');
   const { globalName, remoteEntry, ...rest } = userConfig;
-  return merge(rest, {});
+  const config: webpack.Configuration = {
+    optimization: {},
+    module: {},
+    plugins: [
+      new container.ModuleFederationPlugin({
+        shared: ['react', 'react-dom'],
+      }),
+    ],
+  };
+  return merge(rest, config, {});
 }
 
 /**

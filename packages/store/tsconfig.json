@@ -1,5 +1,5 @@
 {
-  "extends": "@tencent/next-config/json/base.json",
+  "extends": "@tencent/next-config/schema/base.json",
   "compilerOptions": {
     "target": "ES2015",
     "module": "ESNext",

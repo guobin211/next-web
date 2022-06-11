@@ -1,5 +1,5 @@
 {
-  "extends": "@tencent/next-config/json/next.json",
+  "extends": "@tencent/next-config/schema/next.json",
   "include": [
     "next-env.d.ts",
     "./*.ts",

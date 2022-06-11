@@ -3,6 +3,7 @@
   "display": "ReactLibrary",
   "extends": "./base.json",
   "compilerOptions": {
+    "resolveJsonModule": false,
     "target": "ES2015",
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "ESNext",

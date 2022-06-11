@@ -11,9 +11,10 @@
     "test": "jest"
   },
   "files": [
-    "json",
+    "schema",
     "dist"
   ],
+  "sharedDependencies": {},
   "dependencies": {
     "@swc/core": "^1",
     "@swc/jest": "^0.2",

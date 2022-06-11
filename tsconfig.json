@@ -1,4 +1,4 @@
 {
-  "extends": "@tencent/next-config/json/base.json",
+  "extends": "@tencent/next-config/schema/base.json",
   "exclude": ["node_modules"]
 }
