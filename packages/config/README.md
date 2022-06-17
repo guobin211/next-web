@@ -19,6 +19,5 @@
     |- jest.config.ts
     |- postcss.config.ts
     |- rollup.confog.ts
-    |- swc.confog.ts
     |- webpack.confog.ts
 ```

@@ -3,29 +3,37 @@ import webpack, { container } from 'webpack';
 
 /**
  * 生成webpack配置
- * @param userConfig
+ * @param fc
  */
-function config(userConfig: UserConfig): webpack.Configuration {
-  console.log('next-config webpack config');
-  const { globalName, remoteEntry, ...rest } = userConfig;
+function config(fc: FederationConfig): webpack.Configuration {
+  const { name, filename, remotes, exposes, ...wc } = fc;
   const config: webpack.Configuration = {
-    optimization: {},
-    module: {},
     plugins: [
       new container.ModuleFederationPlugin({
-        shared: ['react', 'react-dom'],
+        name,
+        filename,
+        remotes,
+        exposes,
+        shared: {
+          react: {
+            singleton: true,
+          },
+          'react-dom': {
+            singleton: true,
+          },
+        },
       }),
     ],
   };
-  return merge(rest, config, {});
+  return merge(wc, config);
 }
 
 /**
  * webpack构建
- * @param userConfig
+ * @param fc
  */
-function build(userConfig: UserConfig) {
-  const compiler = webpack(config(userConfig));
+function build(fc: FederationConfig) {
+  const compiler = webpack(config(fc));
   compiler.run((err, stats) => {
     if (err) {
       console.error(err);
@@ -37,15 +45,14 @@ function build(userConfig: UserConfig) {
   });
 }
 
-interface UserConfig extends webpack.Configuration {
+interface FederationConfig extends webpack.Configuration {
   /**
    * UMD格式全局变量名
    */
-  globalName?: string;
-  /**
-   * 远程入口文件
-   */
-  remoteEntry?: string;
+  name?: string;
+  filename?: string;
+  remotes?: Record<string, string>;
+  exposes?: Record<string, string>;
 }
 
 export default {

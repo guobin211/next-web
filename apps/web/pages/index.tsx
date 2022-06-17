@@ -7,9 +7,9 @@ import { ButtonProps } from '@tencent/next-ui/src/button/Button.props';
 export class SubmitButton extends React.Component<ButtonProps> {
   render() {
     return (
-      <button type={this.props.type} onClick={ev => this.props.onClick?.(ev)}>
+      <Button type={this.props.type} onClick={ev => this.props.onClick?.(ev)}>
         {this.props.children}
-      </button>
+      </Button>
     );
   }
 }

@@ -4,7 +4,7 @@
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "",
     "clean": "rm -rf .turbo && rm -rf dist && rm -rf node_modules"
   },
   "files": [
